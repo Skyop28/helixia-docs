@@ -1,0 +1,79 @@
+---
+title: "Vanity Rewards"
+description: "Earn mystery boxes by keeping the server's vanity link in your Discord status."
+icon: "id-badge"
+---
+
+The vanity system rewards you for promoting the server. By keeping the Helixia invite link in your custom Discord status, you earn mystery boxes over time — completely passively.
+
+## What Is Vanity?
+
+"Vanity" refers to your custom Discord status (the text that appears under your username). If your status starts with the server's invite link, the bot tracks how long it's been active and rewards you for it.
+
+## Requirements
+
+To earn vanity rewards, you must meet **all three** requirements simultaneously:
+
+<Steps>
+  <Step title="Account age">
+    Your Discord account must be at least **6 months old**. This prevents brand-new alt accounts from farming rewards.
+  </Step>
+  <Step title="Vanity text in status">
+    Your custom Discord status must start with one of these:
+    - `.gg/helixia`
+    - `discord.gg/helixia`
+
+    It must be at the very beginning of your status. Having the link buried in the middle or at the end doesn't count.
+  </Step>
+  <Step title="Recent message activity">
+    You must have sent at least **30 messages** in the tracked channel within the **last 10 days**. This ensures active members are the ones earning rewards, not inactive accounts with a vanity status.
+  </Step>
+</Steps>
+
+<Warning>
+  If any one of these three requirements is not met, your vanity time **stops counting** until the requirement is satisfied again. The bot checks continuously, so your time resumes as soon as all requirements are met.
+</Warning>
+
+## How Rewards Work
+
+Once all requirements are met, the bot tracks your vanity time second by second. For every **24 hours** of accumulated vanity time, you earn **1 mystery box**.
+
+This happens automatically — you don't need to run any commands. The box just appears in your inventory.
+
+## Checking Your Status
+
+Run `.vanitystatus` (or `.vs`) to see:
+
+| Field | What It Shows |
+|---|---|
+| **Total Vanity Time** | The cumulative time your vanity has been active (days, hours, minutes, seconds) |
+| **Currently Active** | Whether your vanity is currently counting right now |
+| **Session Info** | When your current session started (if active) |
+| **Requirements** | Checkmarks showing which requirements you meet and which you don't |
+
+If your vanity is present but time isn't counting, the bot shows you exactly why — whether it's your account age, the vanity text, or insufficient recent messages.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="My vanity is set but it's not counting">
+    Check `.vanitystatus` — it will show which requirement is failing. The most common issue is not having enough recent messages. You need 30 messages in the tracked channel within the last 10 days.
+  </Accordion>
+  <Accordion title="Does it count while I'm offline?">
+    Your vanity status persists even when you're offline (as long as you don't clear it). However, the bot can only track your status when it can see it. If you appear fully offline with no status visible, tracking may pause.
+  </Accordion>
+  <Accordion title="What if I change my status temporarily?">
+    If you remove or change your vanity status, tracking pauses. When you set it back, tracking resumes. Your accumulated time is never lost — it just stops growing when the vanity isn't active.
+  </Accordion>
+  <Accordion title="Do I need exactly '.gg/helixia' or can I add more text?">
+    Your status must **start** with `.gg/helixia` or `discord.gg/helixia`. You can have additional text after it — for example, `.gg/helixia | Playing Pokémon` would count. But it must be at the beginning.
+  </Accordion>
+</AccordionGroup>
+
+## Vanity Achievements
+
+In addition to the regular box rewards, vanity time also counts toward the **Vanity Time achievement category**. These achievements offer massive one-time Pokécoin rewards for hitting time milestones (1 week, 2 weeks, 1 month, 3 months, and 6 months).
+
+<Card title="Vanity Achievements" icon="trophy" href="/progression/achievements">
+  See all Vanity Time achievement milestones and rewards.
+</Card>

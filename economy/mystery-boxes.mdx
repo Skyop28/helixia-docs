@@ -1,0 +1,65 @@
+---
+title: "Mystery Boxes"
+description: "How to earn and open mystery boxes for random Pokécoin rewards."
+icon: "box-open"
+---
+
+Mystery boxes are containers that hold a random amount of Pokécoins. Each box, when opened, gives you between **30,000 and 150,000 PC**.
+
+## How to Open Boxes
+
+Use the `.openbox` command (or `.ob` for short):
+
+```
+.openbox 1        — open 1 box
+.openbox 5        — open 5 boxes at once
+.openbox all      — open all your boxes
+```
+
+When you open boxes, the bot will show you what each box contained and your updated balance.
+
+## How to Earn Boxes
+
+There are several ways to earn mystery boxes. They accumulate automatically based on your activity.
+
+### Messages
+
+For every **100 messages** you send in the designated whitelisted channel, you earn **1 mystery box**. Only messages in the tracked channel count — messages in other channels don't contribute to this.
+
+<Note>
+  This is the same channel that counts toward your "Send 100 Messages" daily quest. Two benefits from one activity.
+</Note>
+
+### Vanity Status
+
+If your custom Discord status starts with `.gg/helixia` or `discord.gg/helixia`, the bot tracks your vanity time. For every **24 hours** of continuous vanity time, you earn **1 mystery box**.
+
+There are requirements to be eligible — see the [Vanity guide](/community/vanity) for full details.
+
+### Server Tag
+
+Keeping the server tag active earns you **1 mystery box every 72 hours**.
+
+### Giveaways
+
+Some giveaways award mystery boxes as prizes. The number of boxes depends on the specific giveaway.
+
+## Box Rewards
+
+Each mystery box gives a random reward:
+
+| Minimum | Maximum | Rounding |
+|---|---|---|
+| 30,000 PC | 150,000 PC | Rounded to nearest 1,000 |
+
+The reward is determined randomly when you open the box. Every box has an equal chance of landing anywhere in that range.
+
+<Tip>
+  Opening boxes in bulk (`.openbox all`) is the fastest way. There's no advantage to opening them one at a time — the rewards are random regardless.
+</Tip>
+
+## Checking Your Boxes
+
+Run `.info` to see how many unopened boxes you have. The **Boxes** field shows your current count.
+
+You can also run `.helpbox` for an in-bot explanation of the box system.

@@ -1,0 +1,87 @@
+---
+title: "Getting Started with Gambling"
+description: "How to start a gamble, choose a game, and play your first match."
+icon: "play"
+---
+
+Ready to put your Pokécoins on the line? Here's how to go from zero to your first gamble.
+
+## Starting a Gamble
+
+<Steps>
+  <Step title="Go to a gambling channel">
+    Gambling commands only work in the designated gambling channels. If you try to use `.gamble` elsewhere, the bot will tell you where to go.
+  </Step>
+  <Step title="Challenge someone">
+    ```
+    .gamble @opponent amount
+    ```
+
+    For example:
+    ```
+    .gamble @Awnish 100k
+    ```
+
+    You can use shorthand: `50k` (50,000), `500k` (500,000), `1m` (1,000,000).
+
+    The minimum wager is **50,000 PC**. Both you and your opponent must have enough balance to cover the wager.
+  </Step>
+  <Step title="Choose a game type">
+    A dropdown menu appears with four options:
+    - **High/Low** — pick HIGH or LOW, then both roll
+    - **Death Roll** — take turns rolling in a shrinking range
+    - **Buckshot Roulette** — choose to shoot yourself or your opponent
+    - **Pokémon Rand** — random Pokémon stat battles
+
+    Select the game you want to play.
+  </Step>
+  <Step title="Choose a format">
+    Select how many rounds you want to play:
+    - **Best of 1 (BO1)** — single round, fast
+    - **Best of 3 (BO3)** — first to 2 rounds wins
+    - **Best of 5 (BO5)** — first to 3 rounds wins (Pokémon Rand only)
+  </Step>
+  <Step title="Opponent accepts or rejects">
+    Your opponent sees the challenge with all the details — game type, format, and wager. They have **60 seconds** to click **Accept** or **Reject**.
+
+    If they don't respond in time, the challenge expires automatically.
+  </Step>
+  <Step title="Game begins">
+    Once accepted, both players' wagers are locked in escrow and the game starts. Follow the on-screen prompts — buttons, rolls, and choices are all handled through Discord's interface.
+  </Step>
+</Steps>
+
+## Requirements
+
+Before you can gamble, make sure:
+
+| Requirement | Details |
+|---|---|
+| **Minimum wager** | 50,000 PC |
+| **Sufficient balance** | Both players need enough coins |
+| **No active session** | You can't be in another gamble |
+| **Not a bot** | You can't gamble against bots |
+| **Not yourself** | You can't gamble against yourself |
+| **Correct channel** | Must be in a gambling channel |
+
+## Reading the Game Interface
+
+During a gamble, the bot displays:
+
+- **Game type** and **format** at the top
+- **Current score** (in BO3/BO5 matches)
+- **Wager amount** visible throughout
+- **Interactive buttons** for your moves
+- **Roll results** and round outcomes in real time
+
+## After the Match
+
+When a match ends:
+- **Winner** receives both stakes (2× the wager) added to their balance
+- **Loser** has already had their wager deducted (it was locked at the start)
+- Both players' gambling profiles are updated
+- The result is logged to the gambling log channel
+
+<Tip>
+  Not sure which game to try first? **High/Low BO1** is the simplest and fastest. Pick HIGH or LOW, both roll, and the better roll wins. Quick and straightforward.
+</Tip>

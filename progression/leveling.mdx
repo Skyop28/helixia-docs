@@ -1,0 +1,50 @@
+---
+title: "Leveling"
+description: "How the leveling system works and what rewards you earn at each level."
+icon: "arrow-up"
+---
+
+The leveling system in Helixia is tied to Discord roles. As you gain experience and reach new levels, you receive level roles — and each new level role comes with a one-time Pokécoin reward.
+
+## How Leveling Works
+
+Leveling is managed through the server's level roles. When you reach a new level milestone and receive the corresponding role, the bot detects this and awards you a Pokécoin bonus.
+
+Each level role grants a **one-time reward** that is automatically added to your balance. You'll receive a notification when this happens.
+
+## Viewing Level Rewards
+
+Run `.leveluplist` (or `.lvllist`) to see all configured level-up rewards. The output lists each level and its corresponding Pokécoin reward.
+
+The format looks like:
+
+```
+Level 5  — 100,000 Pokécoins
+Level 10 — 250,000 Pokécoins
+Level 15 — 500,000 Pokécoins
+...
+```
+
+The exact levels and amounts depend on the server's current configuration.
+
+## Key Details
+
+<AccordionGroup>
+  <Accordion title="Rewards are one-time only">
+    Each level reward can only be claimed once. If you already received the reward for Level 10, you won't get it again even if you somehow lose and regain the role.
+  </Accordion>
+  <Accordion title="Higher levels = bigger rewards">
+    The rewards scale up significantly at higher levels. Early levels might give 50,000–100,000 PC, while higher levels can award 500,000 PC or more.
+  </Accordion>
+  <Accordion title="Your current level shows on your profile">
+    When you run `.info`, the **Current Level** field shows your highest level role. This is determined by which level roles you currently have.
+  </Accordion>
+</AccordionGroup>
+
+## Checking Your Level
+
+Your current level is displayed on your `.info` profile. The level shown corresponds to the highest level role you hold in the server.
+
+<Tip>
+  Keep chatting in the tracked channels to gain experience and level up. The level-up rewards are free Pokécoins just for being active in the community.
+</Tip>

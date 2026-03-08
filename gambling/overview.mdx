@@ -1,0 +1,80 @@
+---
+title: "Gambling Overview"
+description: "Challenge other players to PvP duels and put your Pokécoins on the line."
+icon: "dice"
+---
+
+The Helixia gambling system lets you challenge other players to one-on-one Pokécoin duels. Choose a game, pick your wager, and compete head-to-head. The winner takes both players' stakes.
+
+## At a Glance
+
+- **4 game types** to choose from
+- **3 match formats** (Best of 1, Best of 3, Best of 5)
+- **Minimum wager** of 50,000 PC
+- **Secure escrow** — your coins are locked during the match so neither player can move them
+- **Detailed stats tracking** — every game is recorded on your gambling profile
+
+## Game Types
+
+<CardGroup cols={2}>
+  <Card title="High/Low" icon="arrow-up-arrow-down" href="/gambling/high-low">
+    Pick HIGH or LOW, then both players roll. Simple and fast.
+  </Card>
+  <Card title="Death Roll" icon="skull" href="/gambling/death-roll">
+    Players take turns rolling in a shrinking range. Roll a 1 to win.
+  </Card>
+  <Card title="Buckshot Roulette" icon="gun" href="/gambling/buckshot-roulette">
+    A game of nerves with live and blank shells. Shoot yourself or your opponent.
+  </Card>
+  <Card title="Pokémon Rand" icon="swords" href="/gambling/pokemon-rand">
+    Random Pokémon stat battles. Roll Pokémon and compare stats.
+  </Card>
+</CardGroup>
+
+## Match Formats
+
+| Format | Rounds to Win | Available For |
+|---|---|---|
+| **Best of 1 (BO1)** | 1 round | All games |
+| **Best of 3 (BO3)** | 2 rounds | High/Low, Death Roll, Buckshot |
+| **Best of 5 (BO5)** | 3 rounds | Pokémon Rand only |
+
+<Card title="Formats Guide" icon="list-ol" href="/gambling/formats">
+  Detailed breakdown of each format and when to use them.
+</Card>
+
+## Key Concepts
+
+### Escrow System
+
+When a gamble is accepted, both players' wagers are **locked** (escrowed). This means:
+
+- You can't transfer or spend your wagered coins during the match
+- You can't claim them through the claim panel
+- They're completely secured until the match ends
+- Winner gets both stakes (2× the wager)
+- In case of a tie (rare, only in Buckshot), both stakes are returned
+
+This prevents any manipulation during active matches.
+
+### Forfeits
+
+If a player takes too long on their turn (over 5 minutes), they automatically forfeit the match. The opponent wins and receives both stakes.
+
+### One Session at a Time
+
+You can only be in **one** gambling session at a time. If you have an active gamble, you can't start or accept another until it's resolved.
+
+## Commands
+
+| Command | What It Does |
+|---|---|
+| `.gamble @user amount` | Challenge someone to a gamble |
+| `.gamblehelp` | View rules for each game type |
+| `.gamblingprofile` | View your personal gambling stats |
+| `.gamblingleaderboard` | View gambling leaderboards |
+| `.gamblestats` | View server-wide gambling statistics |
+
+<Card title="Getting Started" icon="play" href="/gambling/getting-started">
+  Step-by-step guide to starting your first gamble.
+</Card>

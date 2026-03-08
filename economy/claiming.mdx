@@ -1,0 +1,72 @@
+---
+title: "Claiming Pokécoins"
+description: "How to convert your Pokécoins into real Pokétwo currency through the claim panel."
+icon: "hand-holding-dollar"
+---
+
+The claim panel is how you convert your Helixia Pokécoins into actual Pokétwo credits. This is the core way your in-server earnings become tangible value.
+
+## How the Claim Panel Works
+
+The claim panel lives in a dedicated channel. It has two buttons:
+
+1. **Current Balance** — shows your current Pokécoin balance in a private reply that only you can see.
+2. **Claim Pokécoins** — opens a form where you submit a claim request.
+
+## Step-by-Step Claiming Process
+
+<Steps>
+  <Step title="Go to the claim channel">
+    Navigate to the designated claim channel in the server. You'll see the claim panel message with two buttons.
+  </Step>
+  <Step title="Click 'Claim Pokécoins'">
+    A form (modal) will pop up with three fields to fill out.
+  </Step>
+  <Step title="Fill out the claim form">
+    - **Amount** — how many Pokécoins you want to claim. Leave this empty to claim your entire balance. Minimum is **50,000 PC**.
+    - **Market ID** — the Pokétwo marketplace listing ID where the bot will send your credits. This is required.
+    - **Vouch Message** — a short message (10–500 characters) that will be posted as your vouch after the claim is processed. This is required.
+  </Step>
+  <Step title="Submit and wait">
+    Your claim enters a queue. The bot processes claims in order (first come, first served). You'll receive a DM when your claim is being processed and another when it's complete.
+  </Step>
+  <Step title="Receive your credits">
+    The bot purchases your Pokétwo listing using the claimed amount. Your balance is deducted and a vouch is automatically posted.
+  </Step>
+</Steps>
+
+## Important Rules
+
+<Warning>
+  Read these carefully — failed claims can result in cooldowns.
+</Warning>
+
+### Minimum Claim Amount
+
+You must claim at least **50,000 PC** at a time. If your balance is below 50,000, you won't be able to claim.
+
+### Cooldown After Claiming
+
+After a successful claim, there is a **1-hour cooldown** before you can claim again. Plan your claims accordingly.
+
+### Queue Limit
+
+The claim queue can hold a maximum of **30 requests** at a time. If the queue is full, you'll need to wait until some claims are processed before submitting yours.
+
+### What Happens if Something Goes Wrong
+
+If the bot encounters an issue processing your claim (for example, the listing ID is invalid), you may receive an error cooldown. The bot will DM you with details about what went wrong.
+
+## Tips for Smooth Claims
+
+<AccordionGroup>
+  <Accordion title="Double-check your Market ID">
+    The most common reason claims fail is an incorrect or expired Market ID. Make sure the listing is active and the ID is correct before submitting.
+  </Accordion>
+  <Accordion title="Claim in larger amounts">
+    Since there's a 1-hour cooldown between claims, it's more efficient to save up and claim larger amounts rather than making many small claims.
+  </Accordion>
+  <Accordion title="Keep your DMs open">
+    The bot will DM you with claim status updates. If your DMs are closed, you won't receive these notifications (though the claim will still process).
+  </Accordion>
+</AccordionGroup>

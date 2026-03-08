@@ -1,0 +1,47 @@
+---
+title: "Transferring Pokécoins"
+description: "How to send Pokécoins to other members."
+icon: "arrow-right-arrow-left"
+---
+
+You can send Pokécoins directly to any other member in the server using the `.sendbal` command.
+
+## How to Transfer
+
+```
+.sendbal @user amount
+```
+
+**Examples:**
+```
+.sendbal @Awnish 100000
+.sendbal @Awnish 100k
+.sendbal @Awnish 1.5m
+```
+
+The bot supports shorthand amounts:
+- `k` = thousands (e.g., `50k` = 50,000)
+- `m` = millions (e.g., `1m` = 1,000,000)
+
+## Rules and Limits
+
+| Rule | Details |
+|---|---|
+| **Minimum transfer** | 50,000 PC |
+| **Cooldown** | 30 seconds between transfers |
+| **Balance check** | You must have enough Pokécoins in your balance |
+| **Self-transfer** | You cannot send Pokécoins to yourself |
+| **Bot transfer** | You cannot send Pokécoins to bots |
+
+<Warning>
+  If you are in an **active gambling session**, your wagered amount is locked and cannot be transferred. This prevents any manipulation during ongoing gambles. The locked coins are returned to your balance once the gamble concludes.
+</Warning>
+
+## After Transferring
+
+After a successful transfer:
+- Your balance is reduced by the sent amount
+- The recipient's balance increases by the same amount
+- The transfer is logged and visible in your transfer history
+
+You can view your transfer history by clicking the **Transfers** button on your `.info` profile.

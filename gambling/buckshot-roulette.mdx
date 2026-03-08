@@ -1,0 +1,74 @@
+---
+title: "Buckshot Roulette"
+description: "A game of nerves with live and blank shells. Shoot yourself or your opponent."
+icon: "gun"
+---
+
+Buckshot Roulette is a strategic game inspired by Russian roulette mechanics. Each player has lives, and you choose whether to fire at yourself or your opponent with a mix of live and blank shells.
+
+## Setup
+
+At the start of each round:
+- A shotgun is loaded with **8 shells**: some live, some blank
+- **2 to 4 shells are live** (randomly determined), the rest are blank
+- Each player starts with **3 lives**
+
+## How It Works
+
+<Steps>
+  <Step title="Your turn begins">
+    On your turn, you see two buttons:
+    - **Shoot Yourself**
+    - **Shoot Opponent**
+  </Step>
+  <Step title="Choose your target">
+    If you **Shoot Opponent**:
+    - **Live shell**: Opponent loses 1 life. Your turn ends.
+    - **Blank shell**: No damage. Your turn ends.
+
+    If you **Shoot Yourself**:
+    - **Live shell**: You lose 1 life. Your turn ends.
+    - **Blank shell**: No damage. **You keep your turn** and shoot again.
+  </Step>
+  <Step title="Turns alternate">
+    After your turn ends (from a live shell or shooting your opponent with a blank), the other player takes their turn.
+  </Step>
+  <Step title="Round ends">
+    A round ends when one player reaches **0 lives**. The surviving player wins the round.
+  </Step>
+</Steps>
+
+## Strategy
+
+The key strategic element is the **shoot yourself** mechanic:
+
+- If you think the current shell is **blank**, shooting yourself is advantageous because you get to keep your turn and fire again.
+- If you think the current shell is **live**, you'd want to shoot your opponent.
+- You can count the remaining shells and probabilities to make informed decisions.
+
+<AccordionGroup>
+  <Accordion title="Shell counting">
+    At the start of each round, the bot tells you how many live and blank shells there are. As shells are fired, you can track what's been used. For example, if 3 out of 3 live shells have been fired, all remaining shells are guaranteed blank.
+  </Accordion>
+  <Accordion title="When to shoot yourself">
+    If the odds favor a blank shell (more blanks remaining than live), shooting yourself gives you a good chance of getting an extra turn with no damage. If you're right, you might be able to fire multiple times at your opponent.
+  </Accordion>
+  <Accordion title="When to shoot your opponent">
+    If the odds favor a live shell (more live remaining than blank), shooting your opponent is the safer play. You either deal damage or harmlessly end your turn.
+  </Accordion>
+</AccordionGroup>
+
+## Ties
+
+In rare cases, a tie can occur — if all remaining shells are blank and both players have equal lives when the round ends. In a tie:
+- If it's a **BO1**, the match is a draw and both players get their wager back.
+- If it's a **BO3**, the tied round doesn't count and a new round is played.
+
+## Available Formats
+
+| Format | Rounds to Win |
+|---|---|
+| **Best of 1** | 1 round |
+| **Best of 3** | 2 rounds |
+
+In BO3, each round starts fresh with a new set of shells and both players back at 3 lives.

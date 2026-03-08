@@ -1,0 +1,69 @@
+---
+title: "Pokémon Rand"
+description: "Random Pokémon stat battles — roll Pokémon and compare their stats."
+icon: "swords"
+---
+
+Pokémon Rand is a unique gambling game that uses real Pokémon stats. Players roll random Pokémon and compare a chosen stat. Higher stat wins the round.
+
+## How It Works
+
+<Steps>
+  <Step title="First player picks a stat">
+    The first player (usually the initiator) rolls a number between **1 and 7** to select which stat will be compared:
+
+    | Roll | Stat |
+    |---|---|
+    | 1 | HP |
+    | 2 | Attack |
+    | 3 | Defense |
+    | 4 | Sp. Atk |
+    | 5 | Sp. Def |
+    | 6 | Speed |
+    | 7 | Total (sum of all stats) |
+  </Step>
+  <Step title="First player rolls a Pokémon">
+    A random number between **1 and 1025** is generated, corresponding to a Pokémon in the National Pokédex. That Pokémon's selected stat is revealed.
+  </Step>
+  <Step title="Second player rolls a Pokémon">
+    The second player also gets a random Pokémon. The same stat is compared.
+  </Step>
+  <Step title="Higher stat wins">
+    The player whose Pokémon has the higher value for the chosen stat wins the round.
+
+    If both Pokémon have the **same** stat value, the round is a tie — no points are awarded and the round is skipped.
+  </Step>
+</Steps>
+
+## Example
+
+> **Round 1:** Stat rolled is **Attack** (2)
+>
+> Player A gets **Garchomp** (Attack: 130)
+> Player B gets **Pikachu** (Attack: 55)
+>
+> Player A wins the round!
+
+## Strategy
+
+Pokémon Rand is primarily luck-based — both the stat and the Pokémon are random. However, some stats are more volatile than others:
+
+- **Total** (7) tends to produce closer matchups since it averages all stats
+- **Speed** (6) has a wide range, creating more dramatic differences
+- **HP** (1) tends to be higher overall but with big outliers
+
+Since the stat is also randomly rolled, there's no way to control the outcome. It's a pure test of luck.
+
+## Available Formats
+
+| Format | Rounds to Win |
+|---|---|
+| **Best of 1** | 1 round |
+| **Best of 3** | 2 rounds |
+| **Best of 5** | 3 rounds |
+
+Pokémon Rand is the **only game type** that supports Best of 5 format. This is because individual rounds are very fast (just stat comparisons), so longer matches keep things interesting.
+
+<Tip>
+  BO5 matches are great if you want a more extended experience. With 5 potential rounds, comebacks are possible and the match feels more skill-testing, even though each round is random.
+</Tip>

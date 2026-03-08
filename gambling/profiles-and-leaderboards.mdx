@@ -1,0 +1,96 @@
+---
+title: "Profiles & Leaderboards"
+description: "Track your gambling stats and compete on the server leaderboards."
+icon: "chart-line"
+---
+
+Every gamble you play is tracked. Your personal gambling profile records your wins, losses, earnings, streaks, and more. The leaderboard lets you see how you stack up against everyone else.
+
+## Gambling Profile
+
+**Command:** `.gamblingprofile` (or `.gp`)
+
+Your gambling profile is **private** — you can only view your own stats.
+
+### What's Shown
+
+| Section | Fields |
+|---|---|
+| **Overall Record** | Wins, Losses, Win Rate, W/L Ratio |
+| **Earnings** | Net Profit, Total Volume Wagered, Average Bet Size |
+| **Roll Stats** | Average Roll, Highest Roll, Lowest Roll |
+| **Highlights** | Biggest Win, Worst Loss |
+| **Streaks** | Current Win/Loss Streak, Best Win Streak, Worst Loss Streak |
+| **Format Record** | BO1 W/L, BO3 W/L |
+| **Activity** | Total Games, Unique Opponents, Current Streak |
+
+### Understanding Your Stats
+
+<AccordionGroup>
+  <Accordion title="Win Rate">
+    Your win rate is calculated as `Wins / (Wins + Losses) × 100`. A 50% win rate means you're breaking even in terms of games won.
+  </Accordion>
+  <Accordion title="Net Profit">
+    This is the total amount of Pokécoins you've won minus the total you've lost across all gambles. Positive means you're up overall; negative means you're down.
+  </Accordion>
+  <Accordion title="Volume">
+    The total amount of Pokécoins you've wagered across all games — wins and losses combined. This shows how much action you've had.
+  </Accordion>
+  <Accordion title="Average Bet">
+    Your total volume divided by the number of games played. This shows your typical wager size.
+  </Accordion>
+  <Accordion title="Rank Emoji">
+    Based on your total number of games played, you'll see a rank emoji on your profile:
+    - 🥉 Bronze — getting started
+    - 🥈 Silver — regular gambler
+    - 🥇 Gold — experienced
+    - 💎 Diamond — veteran
+    - 👑 Crown — top-tier
+  </Accordion>
+</AccordionGroup>
+
+## Gambling Leaderboard
+
+**Command:** `.gamblingleaderboard` (or `.glb`)
+
+The leaderboard ranks all players across multiple categories.
+
+### Categories
+
+Use the dropdown menu to switch between categories:
+
+| Category | What It Ranks |
+|---|---|
+| **Most Wins** | Total number of gambles won |
+| **Most PC Won** | Total Pokécoins earned from gambling |
+| **Highest Win Rate** | Win percentage (minimum 5 games to qualify) |
+| **Most Games Played** | Total number of gambles played |
+| **Net Profit** | Total earnings minus total losses |
+| **Highest Volume** | Total Pokécoins wagered across all games |
+| **Best Win Streaks** | Longest consecutive win streak |
+| **Most Losses** | Total number of gambles lost |
+| **Most PC Lost** | Total Pokécoins lost to gambling |
+
+Each leaderboard page shows 10 players with navigation buttons to browse through the full rankings. Your own rank is highlighted when applicable.
+
+<Note>
+  The **Highest Win Rate** category requires a minimum of **5 games** played to qualify. This prevents someone with 1 win and 0 losses from topping the board.
+</Note>
+
+## Server Gambling Stats
+
+**Command:** `.gamblestats` (or `.gstats`)
+
+This shows aggregate statistics for the entire server:
+
+| Stat | Description |
+|---|---|
+| **Total Gambles** | Number of gambles completed server-wide |
+| **Total Forfeits** | How many gambles ended in a forfeit |
+| **PC Wagered** | Total Pokécoins put on the line across all gambles |
+| **PC Transferred** | Total Pokécoins actually transferred (from losers to winners) |
+| **Average Wager** | Average bet size across all gambles |
+| **Game Breakdown** | Percentage played of each game type |
+| **Format Breakdown** | Percentage played of each format |
+| **Top Players** | Most wins, most losses, most PC won, most PC lost, longest streak |
+| **Largest Gamble** | The single biggest wager in server history |
